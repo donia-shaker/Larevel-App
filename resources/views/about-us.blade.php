@@ -12,11 +12,11 @@
       crossorigin="anonymous"
     />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../Design-Folder/css/all.min.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
     <!-- CSS Normalized -->
-    <link rel="stylesheet" href="../Design-Folder/css/normalized.css" />
-    <link rel="stylesheet" href="../Design-Folder/css/style.css" />
-    <link rel="stylesheet" href="../Design-Folder/css/about-us.css" />
+    <link rel="stylesheet" href="/css/normalized.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/about-us.css" />
 
     <title>Job Finder</title>
   </head>
@@ -79,7 +79,7 @@
             aria-expanded="false"
           >
             <img
-              src="../Design-Folder/images/personal.png"
+              src="/images/personal.png"
               alt="hugenerd"
               width="30"
               height="30"
@@ -121,7 +121,7 @@
             </p>
           </div>
           <div class="col">
-            <img src="../Design-Folder/images/about.png" class="w-100" alt="" />
+            <img src="/images/about.png" class="w-100" alt="" />
           </div>
         </div>
       </div>
@@ -138,7 +138,7 @@
           >
             <div class="profile-photo shadow">
               <img
-                src="../Design-Folder/images/team-1.jpg"
+                src="/images/team-1.jpg"
                 alt="profile Photo"
                 class="img-fluid"
               />
@@ -156,7 +156,7 @@
           >
             <div class="profile-photo shadow">
               <img
-                src="../Design-Folder/images/team-2.jpg"
+                src="/images/team-2.jpg"
                 alt="profile Photo"
                 class="img-fluid"
               />
@@ -174,7 +174,7 @@
           >
             <div class="profile-photo shadow">
               <img
-                src="../Design-Folder/images/team-3.jpg"
+                src="/images/team-3.jpg"
                 alt="profile Photo"
                 class="img-fluid"
               />
@@ -202,7 +202,7 @@
           >
             <div class="profile-photo shadow">
               <img
-                src="../Design-Folder/images/team-1.jpg"
+                src="/images/team-1.jpg"
                 alt="profile Photo"
                 class="img-fluid"
               />
@@ -231,7 +231,7 @@
           >
             <div class="profile-photo shadow">
               <img
-                src="../Design-Folder/images/team-2.jpg"
+                src="/images/team-2.jpg"
                 alt="profile Photo"
                 class="img-fluid"
               />
@@ -260,7 +260,7 @@
           >
             <div class="profile-photo shadow">
               <img
-                src="../Design-Folder/images/team-3.jpg"
+                src="/images/team-3.jpg"
                 alt="profile Photo"
                 class="img-fluid"
               />

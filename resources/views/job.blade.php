@@ -12,10 +12,10 @@
       crossorigin="anonymous"
     />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../Design-Folder/css/all.min.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
     <!-- CSS Normalized -->
-    <link rel="stylesheet" href="../Design-Folder/css/normalized.css" />
-    <link rel="stylesheet" href="../Design-Folder/css/style.css" />
+    <link rel="stylesheet" href="/css/normalized.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Job Finder</title>
   </head>
   <body>
@@ -77,7 +77,7 @@
             aria-expanded="false"
           >
             <img
-              src="../Design-Folder/images/personal.png"
+              src="/images/personal.png"
               alt="hugenerd"
               width="30"
               height="30"
@@ -183,7 +183,7 @@
                 <div class="row g-0">
                   <div class="col-md-3">
                     <img
-                      src="../Design-Folder/images/job-3.jpg"
+                      src="/images/job-3.jpg"
                       class="img-fluid rounded-start img-thumbnail"
                       data-name=""
                     />
@@ -223,7 +223,7 @@
                 <div class="row g-0">
                   <div class="col-md-3">
                     <img
-                      src="../Design-Folder/images/job-4.png"
+                      src="/images/job-4.png"
                       class="img-fluid rounded-start img-thumbnail"
                       data-name="Microsoft"
                     />
@@ -262,7 +262,7 @@
                 <div class="row g-0">
                   <div class="col-md-3">
                     <img
-                      src="../Design-Folder/images/job-1.jpg"
+                      src="/images/job-1.jpg"
                       class="img-fluid rounded-start img-thumbnail"
                       data-name="NonStop"
                     />
@@ -301,7 +301,7 @@
                 <div class="row g-0">
                   <div class="col-md-3">
                     <img
-                      src="../Design-Folder/images/job-2.jpg"
+                      src="/images/job-2.jpg"
                       class="img-fluid rounded-start img-thumbnail"
                       data-name="Mencap"
                     />
@@ -339,7 +339,7 @@
                 <div class="row g-0">
                   <div class="col-md-3">
                     <img
-                      src="../Design-Folder/images/job-3.jpg"
+                      src="/images/job-3.jpg"
                       class="img-fluid rounded-start img-thumbnail"
                     />
                   </div>
@@ -378,7 +378,7 @@
                 <div class="row g-0">
                   <div class="col-md-3">
                     <img
-                      src="../Design-Folder/images/job-4.png"
+                      src="/images/job-4.png"
                       class="img-fluid rounded-start img-thumbnail"
                       data-name="Microsoft"
                     />
@@ -417,7 +417,7 @@
                 <div class="row g-0">
                   <div class="col-md-3">
                     <img
-                      src="../Design-Folder/images/job-1.jpg"
+                      src="/images/job-1.jpg"
                       class="img-fluid rounded-start img-thumbnail"
                       data-name="NonStop"
                     />
@@ -456,7 +456,7 @@
                 <div class="row g-0">
                   <div class="col-md-3">
                     <img
-                      src="../Design-Folder/images/job-2.jpg"
+                      src="/images/job-2.jpg"
                       class="img-fluid rounded-start img-thumbnail"
                       data-name="Mencap"
                     />
@@ -597,8 +597,8 @@
       </div>
     </footer>
     <!-- End Footer -->
-    <script src="../Design-Folder/js/jquery-main.js"></script>
-    <script src="../Design-Folder/js/filter.js"></script>
+    <script src="/js/jquery-main.js"></script>
+    <script src="/js/filter.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
