@@ -12,10 +12,10 @@
       crossorigin="anonymous"
     />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../Design-Folder/css/all.min.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
     <!-- CSS Normalized -->
-    <link rel="stylesheet" href="../Design-Folder/css/normalized.css" />
-    <link rel="stylesheet" href="../Design-Folder/css/style.css" />
+    <link rel="stylesheet" href="/css/normalized.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Job Finder</title>
   </head>
   <body>
@@ -80,7 +80,7 @@
             aria-expanded="false"
           >
             <img
-              src="../Design-Folder/images/personal.png"
+              src="/images/personal.png"
               alt="hugenerd"
               width="30"
               height="30"
@@ -115,7 +115,7 @@
           <div class="row g-0">
             <div class="col-md-4" style="height: 160px">
               <img
-                src="../Design-Folder/images/job-2.jpg"
+                src="/images/job-2.jpg"
                 class="img-fluid rounded-start img-thumbnail shadow p-4 h-100 w-100"
                 alt="..."
               />

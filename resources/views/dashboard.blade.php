@@ -11,11 +11,11 @@
       crossorigin="anonymous"
     />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../Design-Folder/css/all.min.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
     <!-- CSS Normalized -->
-    <link rel="stylesheet" href="../Design-Folder/css/normalized.css" />
-    <link rel="stylesheet" href="../Design-Folder/css/style.css" />
-    <link rel="stylesheet" href="../Design-Folder/css/dashboard.css" />
+    <link rel="stylesheet" href="/css/normalized.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
 
     <title>Hello, world!</title>
   </head>
@@ -42,7 +42,7 @@
                 aria-expanded="false"
               >
                 <img
-                  src="../Design-Folder/images/personal.png"
+                  src="/images/personal.png"
                   alt="hugenerd"
                   width="30"
                   height="30"
@@ -120,7 +120,7 @@
           >
             <div class="col-md-3 shadow h-50 profile">
               <img
-                src="../Design-Folder/images/personal.png"
+                src="/images/personal.png"
                 class="rounded-circle w-100"
                 alt=""
               />
@@ -259,7 +259,7 @@
             <ul class="nav flex-column">
               <div class="nav-item h-50 profile">
                 <img
-                  src="../Design-Folder/images/personal.png"
+                  src="/images/personal.png"
                   class="rounded-circle w-25 d-inline"
                   alt=""
                 />
@@ -294,7 +294,7 @@
       <div class="d-md-flex justify-content-evenly mx-auto flex-wrap row">
         <div class="col-3 shadow h-50 profile">
           <img
-            src="../Design-Folder/images/personal.png"
+            src="/images/personal.png"
             class="rounded-circle w-100"
             alt=""
           />

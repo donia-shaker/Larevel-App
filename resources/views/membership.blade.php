@@ -12,11 +12,11 @@
       crossorigin="anonymous"
     />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../Design-Folder/css/all.min.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
     <!-- CSS Normalized -->
-    <link rel="stylesheet" href="../Design-Folder/css/normalized.css" />
-    <link rel="stylesheet" href="../Design-Folder/css/style.css" />
-    <link rel="stylesheet" href="../Design-Folder/css/serv.css" />
+    <link rel="stylesheet" href="/css/normalized.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/serv.css" />
 
     <title>Job Finder</title>
   </head>
@@ -79,7 +79,7 @@
             aria-expanded="false"
           >
             <img
-              src="../Design-Folder/images/personal.png"
+              src="/images/personal.png"
               alt="hugenerd"
               width="30"
               height="30"
@@ -112,7 +112,7 @@
             <div class="row g-0">
               <div class="col-md-4">
                 <img
-                  src="../Design-Folder/images/comp-4.jpg"
+                  src="/images/comp-4.jpg"
                   class="img-fluid rounded-start"
                   alt="..."
                 />
@@ -133,7 +133,7 @@
             <div class="row g-0">
               <div class="col-md-4">
                 <img
-                  src="../Design-Folder/images/comp-1.png"
+                  src="/images/comp-1.png"
                   class="img-fluid rounded-start"
                   alt="..."
                 />
@@ -154,7 +154,7 @@
             <div class="row g-0">
               <div class="col-md-4">
                 <img
-                  src="../Design-Folder/images/comp-2.jpg"
+                  src="/images/comp-2.jpg"
                   class="img-fluid rounded-start"
                   alt="..."
                 />
@@ -175,7 +175,7 @@
             <div class="row g-0">
               <div class="col-md-4">
                 <img
-                  src="../Design-Folder/images/comp-3.png"
+                  src="/images/comp-3.png"
                   class="img-fluid rounded-start"
                   alt="..."
                 />
@@ -196,7 +196,7 @@
             <div class="row g-0">
               <div class="col-md-4">
                 <img
-                  src="../Design-Folder/images/comp-4.jpg"
+                  src="/images/comp-4.jpg"
                   class="img-fluid rounded-start"
                   alt="..."
                 />
@@ -217,7 +217,7 @@
             <div class="row g-0">
               <div class="col-md-4">
                 <img
-                  src="../Design-Folder/images/comp-1.png"
+                  src="/images/comp-1.png"
                   class="img-fluid rounded-start"
                   alt="..."
                 />
@@ -238,7 +238,7 @@
             <div class="row g-0">
               <div class="col-md-4">
                 <img
-                  src="../Design-Folder/images/comp-2.jpg"
+                  src="/images/comp-2.jpg"
                   class="img-fluid rounded-start"
                   alt="..."
                 />
@@ -259,7 +259,7 @@
             <div class="row g-0">
               <div class="col-md-4">
                 <img
-                  src="../Design-Folder/images/comp-3.png"
+                  src="/images/comp-3.png"
                   class="img-fluid rounded-start"
                   alt="..."
                 />
