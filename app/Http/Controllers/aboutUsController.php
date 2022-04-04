@@ -9,7 +9,7 @@ class aboutUsController extends Controller
      
  function showPage(){
      
-   return view('about-us');
+   return view('front.about-us');
 
  }
  
