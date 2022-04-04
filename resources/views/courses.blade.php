@@ -58,7 +58,7 @@
             >
               <li class="nav-item">
                 <a
-                  href="../index.html"
+                  href="index"
                   class="nav-link align-middle text-white px-0"
                 >
                   <i class="fas fa-home"></i>
@@ -79,13 +79,13 @@
                   data-bs-parent="#menu"
                 >
                   <li class="w-100">
-                    <a href="dashboard.html" class="nav-link text-white px-0">
+                    <a href="dashboard" class="nav-link text-white px-0">
                       <i class="fas fa-user-alt"></i>
                       <span class="ms-1 d-none d-sm-inline">Account</span>
                     </a>
                   </li>
                   <li class="w-100">
-                    <a href="education.html" class="nav-link text-white px-0">
+                    <a href="education" class="nav-link text-white px-0">
                       <i class="fas fa-user-graduate"></i>
                       <span class="d-none d-sm-inline">Education</span>
                     </a>
@@ -100,7 +100,7 @@
               </li>
               <li>
                 <a
-                  href="skills.html"
+                  href="skills"
                   class="nav-link px-0 text-white align-middle"
                 >
                   <i class="fas fa-puzzle-piece"></i>
@@ -109,7 +109,7 @@
               </li>
               <li>
                 <a
-                  href="../index.html"
+                  href="index"
                   data-bs-toggle="collapse"
                   class="nav-link px-0 text-white align-middle"
                 >

@@ -48,7 +48,7 @@ Route::get('/education', function () {
     return view('education');
 });
 
-Route::get('/job', function () {
+Route::get('/jobs', function () {
     return view('job');
 });
 
