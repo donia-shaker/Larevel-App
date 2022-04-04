@@ -21,53 +21,53 @@ Route::get('/', function () {
 Route::get('/about_us',[ aboutUsController::class,'showPage']);
 
 Route::get('/index', function () {
-    return view('index');
+    return view('front.index');
 });
 
 Route::get('/contact_us', function () {
-    return view('contact-us');
+    return view('front.contact-us');
 });
 
 Route::get('/courses', function () {
-    return view('courses');
+    return view('customer.courses');
 });
 
 Route::get('/cv', function () {
-    return view('cv');
+    return view('front.cv');
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('customer.dashboard');
 });
 
 Route::get('/details', function () {
-    return view('details');
+    return view('front.details');
 });
 
 Route::get('/education', function () {
-    return view('education');
+    return view('customer.education');
 });
 
 Route::get('/jobs', function () {
-    return view('job');
+    return view('front.job');
 });
 
 Route::get('/login', function () {
-    return view('login');
+    return view('front.login');
 });
 
 Route::get('/membership', function () {
-    return view('membership');
+    return view('front.membership');
 });
 
 Route::get('/services', function () {
-    return view('services');
+    return view('front.services');
 });
 
 Route::get('/sign_up', function () {
-    return view('sign-up');
+    return view('front.sign-up');
 });
 
 Route::get('/skills', function () {
-    return view('skills');
+    return view('customer.skills');
 });
