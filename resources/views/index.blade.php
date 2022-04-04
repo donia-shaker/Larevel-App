@@ -40,29 +40,29 @@
         <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-2">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Pages/job.html">Jobs</a>
+              <a class="nav-link" href="jobs">Jobs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Pages/services.html">Services</a>
+              <a class="nav-link" href="services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Pages/about-us.html">About Us</a>
+              <a class="nav-link" href="about_us">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="contact_us">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Pages/membership.html">Members</a>
+              <a class="nav-link" href="membership">Members</a>
             </li>
           </ul>
           <div class="acount">
-            <a href="Pages/login.html" class="me-2"
+            <a href="login" class="me-2"
               ><i class="fas fa-sign-in-alt me-2"></i>Login</a
             >
-            <a href="Pages/sign-up.html"><i class="fas fa-user"></i> Signup</a>
+            <a href="sign_up"><i class="fas fa-user"></i> Signup</a>
           </div>
           <!-- profile -->
           <div class="dropdown mt-4 mx-2 pb-4">
@@ -85,11 +85,11 @@
               class="dropdown-menu dropdown-menu-dark text-small main-color text-white shadow"
             >
               <li>
-                <a class="dropdown-item" href="Pages/dashboard.html"
+                <a class="dropdown-item" href="dashboard"
                   >Dashboard</a
                 >
               </li>
-              <li><a class="dropdown-item" href="Pages/cv.html">Profile</a></li>
+              <li><a class="dropdown-item" href="cv">Profile</a></li>
               <li>
                 <hr class="dropdown-divider" />
               </li>
