@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\aboutUsController;
+use App\Http\Controllers\jobsController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -71,3 +73,8 @@ Route::get('/sign_up', function () {
 Route::get('/skills', function () {
     return view('customer.skills');
 });
+
+
+// Admin Show All Jobs
+Route::get('/all_Jobs',[ jobsController::class ,'showPage']);
+
