@@ -96,6 +96,11 @@
                   >Dashboard</a
                 >
               </li>
+              <li>
+                <a class="dropdown-item" href="all_Jobs"
+                  >Admin Dashboard</a
+                >
+              </li>
               <li><a class="dropdown-item" href="cv">Profile</a></li>
               <li>
                 <hr class="dropdown-divider" />

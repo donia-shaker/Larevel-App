@@ -104,7 +104,7 @@
 
 
 <div class="app-brand demo ">
-  <a href="index-2.html" class="app-brand-link">
+  <a href="/index" class="app-brand-link">
     <span class="app-brand-logo demo">
 
       <svg width="25" viewBox="0 0 25 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -184,7 +184,7 @@
   </a>
 </li>
 <li class="menu-item">
-  <a href="/Jobs" class="menu-link">
+  <a href="/all_Jobs" class="menu-link">
     <div> All Jobs</div>
   </a>
 </li>
@@ -368,7 +368,7 @@
                         <span class="dropdown-shortcuts-icon bg-label-secondary rounded-circle mb-2">
                           <i class="bx bx-pie-chart-alt-2 fs-4"></i>
                         </span>
-                        <a href="index-2.html" class="stretched-link">Dashboard</a>
+                        <a href="-2.html" class="stretched-link">Dashboard</a>
                         <small class="text-muted mb-0">User Profile</small>
                       </div>
                       <div class="dropdown-shortcuts-item col">

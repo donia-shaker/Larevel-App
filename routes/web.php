@@ -76,5 +76,9 @@ Route::get('/skills', function () {
 
 
 // Admin Show All Jobs
-Route::get('/all_Jobs',[ jobsController::class ,'showPage']);
+Route::get('/all_Jobs',[jobsController::class ,'showPage']);
+Route::get('/add_Job',[jobsController::class,'addJobs'])->name('add_Job');
+Route::get('/edit_Job',[jobsController::class,'editJobs'])->name('edit_Job');
+Route::post('/store_Job',[jobsController::class,'storeJobs'])->name('store_Job');
+Route::post('/update_Job',[jobsController::class,'updateJobs'])->name('update_Job');
 

@@ -1,4 +1,4 @@
-@extends('admin.jobs.master')
+@extends('admin.master')
 @section('content')
 
       
@@ -28,7 +28,7 @@
     <div class="row g-3">
       <div class="col-md-6">
         <label class="form-label" for="multicol-username">Name </label>
-        <input name="title"  type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
+        <input name="name"  type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
       </div>
       <div class="col-md-6">
         <label class="form-label" for="multicol-email">Image </label>
