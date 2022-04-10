@@ -1,4 +1,4 @@
-@extends('admin.jobs.master')
+@extends('admin.master')
 @section('content')
 
         <!-- Content wrapper -->
@@ -50,7 +50,7 @@
              <!-- <span class="badge bg-label-danger me-1">موقف</span> -->
             </td>
             <td>
-            <a href="/edit_books/" class="btn btn-icon btn-outline-dribbble">
+            <a href="/edit_Job" class="btn btn-icon btn-outline-dribbble">
                 <i class="tf-icons bx bx-edit-alt me-1"></i>
               </a>
               <button type="button" class="btn btn-icon btn-outline-dribbble">

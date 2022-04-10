@@ -1,4 +1,4 @@
-@extends('admin.companies.master')
+@extends('admin.master')
 @section('content')
 
         <!-- Content wrapper -->

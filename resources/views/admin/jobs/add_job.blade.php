@@ -1,4 +1,4 @@
-@extends('admin.jobs.master')
+@extends('admin.master')
 @section('content')
       
 
@@ -18,8 +18,8 @@
 <!-- Multi Column with Form Separator -->
 <div class="card mb-4">
   <h5 class="card-header">  Add Job</h5>
-  <form class="card-body" action="/save_job" method="POST" enctype="multipart/form-data">
-    
+  <form class="card-body" action="/store_Job" method="POST" enctype="multipart/form-data">
+    @csrf
     <div class="row g-3">
       <div class="col-md-6">
         <label class="form-label" for="multicol-username">Job Name </label>
