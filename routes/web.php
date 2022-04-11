@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\aboutUsController;
 use App\Http\Controllers\jobsController;
-
+use App\Http\Controllers\usersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -66,9 +66,9 @@ Route::get('/services', function () {
     return view('front.services');
 });
 
-Route::get('/sign_up', function () {
-    return view('front.sign-up');
-});
+
+
+Route::get('/sign_up', [usersController::class,'showPage']);
 
 Route::get('/skills', function () {
     return view('customer.skills');

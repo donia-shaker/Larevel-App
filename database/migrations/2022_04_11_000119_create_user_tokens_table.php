@@ -13,14 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('jobs', function (Blueprint $table) {
+        Schema::create('user_tokens', function (Blueprint $table) {
             $table->id();
-            $table->string("name");
-            $table->string("image");
-            $table->text("place");
-            $table->foreignId('company_id')->constrained();
-            $table->boolean('is_active')->default(1);
+            $table->string('token');
+            $table->string('country');
+            $table->string('device');
+            // $table->unsignedBigInteger('user_id');
+            // $table->foreign('user_id')->references('id')->on('users_tbs');
 
+            $table->boolean('is_active')->default(1);
             $table->timestamps();
         });
     }
@@ -32,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('jobs');
+        Schema::dropIfExists('user_tokens');
     }
 };

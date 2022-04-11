@@ -13,13 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('cources', function (Blueprint $table) {
+        Schema::create('education', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('place');
             $table->date('start');
             $table->date('end');
-            $table->foreignId('user_id')->constrained();
+            // $table->unsignedBigInteger('user_id');
+            // $table->foreign('user_id')->references('id')->on('users_tbs');
             $table->boolean('is_active')->default(1);
             $table->timestamps();
         });
@@ -32,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cources');
+        Schema::dropIfExists('education');
     }
 };

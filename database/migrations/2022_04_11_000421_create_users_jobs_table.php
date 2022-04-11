@@ -13,15 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('users_jobs', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->nullable();
-            $table->string('password');
-            $table->foreignId('rol_id')->constrained();
-
+            // $table->unsignedBigInteger('user_id');
+            // $table->foreign('user_id')->references('id')->on('users_tbs');;
+            // $table->unsignedBigInteger('job_id');
+            // $table->foreign('job_id')->references('id')->on('jobs_tbs');
             $table->boolean('is_active')->default(1);
-
             $table->timestamps();
         });
     }
@@ -33,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('users_jobs');
     }
 };

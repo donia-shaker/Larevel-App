@@ -13,14 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('user_profiles', function (Blueprint $table) {
+        Schema::create('users_tbs', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained();
-            $table->string('image');
-            $table->integer('phone');
-            $table->string('address');
+            $table->string('name');
+            $table->string('email')->nullable();
+            $table->string('password');
+        //     $table->unsignedBigInteger('role_id');
+ 
+        //    $table->foreign('role_id')->references('id')->on('roles');
             $table->boolean('is_active')->default(1);
-
             $table->timestamps();
         });
     }
@@ -32,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_profiles');
+        Schema::dropIfExists('users_tbs');
     }
 };
