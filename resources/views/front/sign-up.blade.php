@@ -15,8 +15,17 @@
                     >
                       Sign up
                     </p>
+                     @if ($errors->any())
+            @foreach ($errors->all() as $err)
+            <p class="alert alert-danger">{{ $err }}</p>
+                
+            @endforeach
+                
+            @endif
 
-                    <form class="mx-1 mx-md-1">
+                    <form class="mx-1 mx-md-1" action="{{ route ('register') }}" method="POST">
+                      @csrf
+
                       <div class="d-flex flex-row align-items-center mb-2">
                         <i class="fas fa-user fa-lg me-2 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0">
@@ -26,10 +35,14 @@
                           <input
                             type="text"
                             id="form3Example1c"
+                            name="name"
                             class="form-control"
                           />
                         </div>
-                      </div>
+                         @error('name')
+                         <p class="alert alert-danger">{{ $message }}</p>
+                         @enderror 
+                      </div> 
 
                       <div class="d-flex flex-row align-items-center mb-2">
                         <i class="fas fa-envelope fa-lg me-2 fa-fw"></i>
@@ -38,7 +51,8 @@
                             >Your Email</label
                           >
                           <input
-                            type="email"
+                            type="text"
+                            name="email"
                             id="form3Example3c"
                             class="form-control"
                           />
@@ -52,7 +66,8 @@
                             >Password</label
                           >
                           <input
-                            type="password"
+                            type="text"
+                            name="password"
                             id="form3Example4c"
                             class="form-control"
                           />
@@ -66,7 +81,8 @@
                             >Repeat your password</label
                           >
                           <input
-                            type="password"
+                          name="confirm_pass"
+                            type="text"
                             id="form3Example4cd"
                             class="form-control"
                           />
@@ -91,7 +107,7 @@
                       <div
                         class="d-flex justify-content-center mx-2 mb-1 mb-lg-4"
                       >
-                        <button type="button" class="btn btn-primary btn-lg">
+                        <button type="submit" class="btn btn-primary btn-lg">
                           Register
                         </button>
                       </div>

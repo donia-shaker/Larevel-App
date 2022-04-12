@@ -13,35 +13,38 @@
             />
           </div>
           <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-            <form>
-              <!-- name input -->
-              <div class="form-outline mb-1 d-block">
-                <label class="form-label" for="form1Example13">Your Name</label>
-                <input
-                  type="text"
-                  id="form1Example13"
-                  class="form-control form-control-lg"
-                />
-              </div>
-
+            @if ($errors->any())
+            @foreach ($errors->all() as $err)
+            <p class="alert alert-danger">{{ $err }}</p>
+                
+            @endforeach
+                
+            @endif
+            <form action="{{ route ('do_login')}}" method="POST">
+              @csrf
               <!-- Email input -->
               <div class="form-outline mb-4">
                 <label class="form-label" for="form1Example13"
                   >Email address</label
                 >
                 <input
-                  type="email"
+                  type="text"
+                  name="email"
                   id="form1Example3"
                   class="form-control form-control-lg"
                 />
+                @error('email')
+              <span class="alert alert-danger">{{ $message }}</span>
+              @enderror
               </div>
 
               <!-- Password input -->
               <div class="form-outline mb-4">
                 <label class="form-label" for="form1Example23">Password</label>
                 <input
-                  type="password"
+                  type="text"
                   id="form1Example23"
+                  name="password"
                   class="form-control form-control-lg"
                 />
               </div>
