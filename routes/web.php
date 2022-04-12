@@ -20,11 +20,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/about_us',[ aboutUsController::class,'showPage']);
+Route::get('/about_us',[ aboutUsController::class,'showPage'])->name('about_us');
 
 Route::get('/index', function () {
     return view('front.index');
-});
+})->name('index');
 
 Route::get('/contact_us', function () {
     return view('front.contact-us');
@@ -54,10 +54,6 @@ Route::get('/jobs', function () {
     return view('front.job');
 });
 
-Route::get('/login', function () {
-    return view('front.login');
-});
-
 Route::get('/membership', function () {
     return view('front.membership');
 });
@@ -67,8 +63,11 @@ Route::get('/services', function () {
 });
 
 
-
-Route::get('/sign_up', [usersController::class,'showPage']);
+// login and register
+Route::get('/sign_up', [usersController::class,'showRegisterPage']);
+Route::post('/register', [usersController::class,'register'])->name('register');
+Route::get('/login', [usersController::class,'showloginPage'])->name('login');
+Route::post('/do_login', [usersController::class,'login'])->name('do_login');
 
 Route::get('/skills', function () {
     return view('customer.skills');
@@ -76,7 +75,7 @@ Route::get('/skills', function () {
 
 
 // Admin Show All Jobs
-Route::get('/all_Jobs',[jobsController::class ,'showPage']);
+Route::get('/all_Jobs',[jobsController::class ,'showPage'])->name('all_Jobs');
 Route::get('/add_Job',[jobsController::class,'addJobs'])->name('add_Job');
 Route::get('/edit_Job',[jobsController::class,'editJobs'])->name('edit_Job');
 Route::post('/store_Job',[jobsController::class,'storeJobs'])->name('store_Job');
