@@ -13,6 +13,10 @@
             />
           </div>
           <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+             @if(session()->has('message')){
+            <p class="alert alert-danger">{{ session()->get('message') }}</p>
+          }
+          @endif
             @if ($errors->any())
             @foreach ($errors->all() as $err)
             <p class="alert alert-danger">{{ $err }}</p>

@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\users_tb;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
-class usersController extends Controller
+
+
+class UserController extends Controller
 {
 
     function showloginPage()
@@ -18,8 +22,17 @@ class usersController extends Controller
      { 
           return view('front.sign-up');
     }
+        public function checkRole(){
+        if(Auth::user()->hasRole('admin'))
+        return 'dashboard';
+            else 
+            return 'home';
+        
+    }
 
         public function login(Request $request){
+                //    print_r( $request->input());
+
             Validator::validate($request->all(),[
             'email'=>['required','email'],
             'password'=>['required']
@@ -31,11 +44,21 @@ class usersController extends Controller
             'password.required'=>'password is required',
          ]);
 
-            $u=new users_tb();
-            $u->email=$request->input('email');
-            $u->password=$request->password;
+        if(Auth::attempt(['email'=>$request->email,'password'=>($request->password)])){
 
-            $u->save();
+            
+            if(Auth::user()->hasRole('admin'))
+               return redirect()->route('all_Jobs');
+               
+            else 
+            return redirect()->route('dashboard');
+
+        
+        }
+        else {
+            return redirect()->route('login')->with(['message'=>'incorerct username or password or your account is not active ']);
+        }
+
             
 
     }
@@ -63,22 +86,28 @@ class usersController extends Controller
 
 
         ]);
-        $u=new users_tb();
+        $u=new User();
         $u->name=$request->name;
-        $u->password=$request->password;
+        $u->password=Hash::make($request->password);
         $u->email=$request->email;
-        if($u->save())
+        if($u->save()){
+        $u->attachRole('client');
         return redirect()->route('index')
-        ->with(['success'=>'user created successful']);
+        ->with(['success'=>'user created successful']);}
         return back()->with(['error'=>'can not create user']);
 
 
     }
 
-        public function allUsers(){
+        public function allUser(){
 
 
     }
 
+    public function logout(){
 
+        Auth::logout();
+        return redirect()->route('login');
+
+    }
 }
