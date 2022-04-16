@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class jobsController extends Controller
 {
     function showPage()
      { 
-          return view('admin.jobs.list_jobs');
+        //   return view('admin.jobs.list_jobs');
+        return response(Auth::users());
     }
     function addJobs( )
      { 

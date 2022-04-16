@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('users_jobs', function (Blueprint $table) {
             $table->id();
-            // $table->unsignedBigInteger('user_id');
-            // $table->foreign('user_id')->references('id')->on('users_tbs');;
-            // $table->unsignedBigInteger('job_id');
-            // $table->foreign('job_id')->references('id')->on('jobs_tbs');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');;
+            $table->unsignedBigInteger('job_id');
+            $table->foreign('job_id')->references('id')->on('jobs');
             $table->boolean('is_active')->default(1);
             $table->timestamps();
         });
