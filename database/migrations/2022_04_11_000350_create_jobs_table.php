@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string("name");
             $table->string("image");
             $table->text("place");
+            $table->text("start");
+            $table->text("end");
             $table->unsignedBigInteger('company_id');
             $table->foreign('company_id')->references('id')->on('companies');
             $table->boolean('is_active')->default(1);

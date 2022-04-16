@@ -35,33 +35,39 @@
         <tbody>
        
 
+          @foreach ($jobs as $job)
+
           <tr>
             
-            <td>Job Name</td>
+            <td>{{ $job->name }}</td>
             <td>
-              <img class="img-fluid rounded" height="150px" width="150px" src="">
+              <img class="img-fluid rounded" height="150px" width="150px" src="{{ $job->image}}">
             </td>
-            <td>description</td>
-            <td>start</td>
-            <td>end</td>
+            <td>{{ $job->palce }}</td>
+            <td>3/1/2022</td>
+            <td>3/2/2021</td>
             <td>   
+              @if($job->is_active==1)
             <span class="badge bg-label-success me-1">مفعل</span>
-
-             <!-- <span class="badge bg-label-danger me-1">موقف</span> -->
+             @else
+             <span class="badge bg-label-danger me-1">موقف</span>
+              @endif
             </td>
             <td>
-            <a href="/edit_Job" class="btn btn-icon btn-outline-dribbble">
+            <a href="{{ route('edit_Job',$job->id) }}" class="btn btn-icon btn-outline-dribbble">
                 <i class="tf-icons bx bx-edit-alt me-1"></i>
               </a>
               <button type="button" class="btn btn-icon btn-outline-dribbble">
-                  <a href="/remove_books/?>" class="btn btn-icon btn-outline-dribbble">
-                <i class="tf-icons bx bx-trash me-1"></i>
-                  </a>
+                  <a href="{{ route('delete_Job',$job->id) }}" class="btn btn-icon btn-outline-dribbble"  >
+                <!-- <i class="tf-icons bx bx-trash me-1"></i> -->
+                  @if($job->is_active==1)disable @else enable @endif</a>
               </button>
               
               
             </td>
           </tr>
+                   @endforeach
+
         </tbody>
       </table>
     </div>
