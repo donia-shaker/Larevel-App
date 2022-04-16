@@ -9,8 +9,8 @@ class jobsController extends Controller
 {
     function showPage()
      { 
-        //   return view('admin.jobs.list_jobs');
-        return response(Auth::users());
+          return view('admin.jobs.list_jobs');
+        // return response(Auth::users());
     }
     function addJobs( )
      { 

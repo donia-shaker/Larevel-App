@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Validator;
 
 
 
+
+
 class UserController extends Controller
 {
 
@@ -22,7 +24,17 @@ class UserController extends Controller
      { 
           return view('front.sign-up');
     }
-        public function checkRole(){
+
+    // public function showloginPage(){
+    //     if(Auth::check())
+    //     return redirect()->route($this->checkRole());
+    //     else 
+    //     return view('front.login');
+    // }
+
+
+
+    public function checkRole(){
         if(Auth::user()->hasRole('admin'))
         return 'dashboard';
             else 
@@ -44,15 +56,14 @@ class UserController extends Controller
             'password.required'=>'password is required',
          ]);
 
-        if(Auth::attempt(['email'=>$request->email,'password'=>($request->password)])){
+        if(Auth::attempt(['email'=>$request->email,'password'=>$request->password,'is_active'=>1])){
 
-            
+
             if(Auth::user()->hasRole('admin'))
                return redirect()->route('all_Jobs');
                
             else 
             return redirect()->route('dashboard');
-
         
         }
         else {
@@ -93,7 +104,8 @@ class UserController extends Controller
         if($u->save()){
         $u->attachRole('client');
         return redirect()->route('index')
-        ->with(['success'=>'user created successful']);}
+        ->with(['success'=>'user created successful']);
+    }
         return back()->with(['error'=>'can not create user']);
 
 
