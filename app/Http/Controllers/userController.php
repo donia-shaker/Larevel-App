@@ -103,7 +103,7 @@ class UserController extends Controller
         $u->email=$request->email;
         if($u->save()){
         $u->attachRole('client');
-        return redirect()->route('index')
+        return redirect()->route('dashboard')
         ->with(['success'=>'user created successful']);
     }
         return back()->with(['error'=>'can not create user']);
