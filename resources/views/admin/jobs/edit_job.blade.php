@@ -19,12 +19,17 @@
 <!-- Multi Column with Form Separator -->
 <div class="card mb-4">
   <h5 class="card-header">انشاء قسم جديد</h5>
+          @if ($errors->any())
+          @foreach ($errors->all() as $err)
+          <p class="alert alert-danger">{{ $err }}</p>
+              
+          @endforeach
+              
+          @endif
+          
+  <form class="card-body" action="{{ route('update_Job',$job->id) }}" method="POST" enctype="multipart/form-data">
+            @csrf
 
-  <form class="card-body" action="/update_job" method="POST" enctype="multipart/form-data">
-    <input type="hidden" name="id" >
-    <?php
-    //  print_r($params) ;
-?>
     <div class="row g-3">
       <div class="col-md-6">
         <label class="form-label" for="multicol-username">Name </label>
@@ -42,7 +47,7 @@
           <div class="row g-3">
       <div class="col-md-6">
         <label class="form-label" for="multicol-username">Description </label>
-        <input name="description"  type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
+        <input name="place"  type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
       </div>
       <div class="col-md-2">
         <label class="form-label" for="multicol-username"> Start</label>

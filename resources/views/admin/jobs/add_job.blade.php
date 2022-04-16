@@ -39,7 +39,7 @@
           <div class="row g-3">
       <div class="col-md-6">
         <label class="form-label" for="multicol-username">وصف </label>
-        <input name="description" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
+        <input name="place" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
       </div>
       <div class="col-md-2">
         <label class="form-label" for="multicol-username"> Start</label>
